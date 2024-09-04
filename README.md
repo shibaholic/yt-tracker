@@ -10,6 +10,10 @@ The project consists of a frontend user interface, backend API and database.
 - The backend uses C# ASP.NET.
 - The database uses MS SQL Server.
 
+| ![Block Diagram](documentation/block%20diagram.drawio.png) | 
+|:--:| 
+| *Block diagram* |
+
 ## Development
 
 For local development, only te database is hosted as a docker instance. THe rest are run in development mode natively.
