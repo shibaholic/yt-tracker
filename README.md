@@ -17,3 +17,7 @@ For local development, only te database is hosted as a docker instance. THe rest
 ## Deployment
 
 The entire stack will first be developed to work in a LAN network, on a local device.
+
+## Project management
+
+Feature backlog and progress will be tracked in [this GitHub Project](https://github.com/users/shibaholic/projects/3/views/1)
