@@ -14,13 +14,18 @@ The project consists of a frontend user interface, backend API and database.
 |:--:| 
 | *Block diagram* |
 
+- Frontend documents
+- Backend documents
+  - [API routes](documentation/API%20routes.md)
+- Database documents
+
 ## Development
 
-For local development, only te database is hosted as a docker instance. THe rest are run in development mode natively.
+For local development, only the database is hosted as a docker instance. THe rest are run in development mode natively.
 
 ## Deployment
 
-The entire stack will first be developed to work in a LAN network, on a local device.
+The entire stack will first be developed to work over a LAN network.
 
 ## Project management
 
