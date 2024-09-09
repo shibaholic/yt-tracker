@@ -1,1 +1,2 @@
 **/*.bkp
+src/server/**/*.sln.DotSettings.user
