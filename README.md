@@ -42,6 +42,7 @@ Feature backlog and progress will be tracked in [this GitHub Project](https://gi
 | 1 | User account | As a user, I want to login/out so that my data is secure. | Must |
 | 2 | Playlist | As a user, I want to enter a playlist URL so that I can track it. | Must |
 | 3 | See playlist | As a user, I want to see the playlist info, which videos are already downloaded. | Must |
+| 4 | Download playlist to server | As a user, I want to download the playlist to the server, since playlists can take a lot of time to download, so it is convenient that I can just let the server do it. | Must |
 | 4 | Download playlist | As a user, I want to download the playlist so I can store the playlist offline. | Must |
 | 5 | Track downloaded videos | As a user, I want to track which videos are already downloaded so I can easily download the newly added videos in the playlist. | Must |
 | 6 | Auto playlist update | As a user, I want the server to automatically track newly added videos in the playlist so their metadata is saved on the server. | Must |
