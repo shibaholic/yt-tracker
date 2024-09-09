@@ -46,3 +46,4 @@ Feature backlog and progress will be tracked in [this GitHub Project](https://gi
 | 5 | Track downloaded videos | As a user, I want to track which videos are already downloaded so I can easily download the newly added videos in the playlist. | Must |
 | 6 | Auto playlist update | As a user, I want the server to automatically track newly added videos in the playlist so their metadata is saved on the server. | Must |
 | 7 | Track removed videos | As a user, I want the server to track how videos are removed from the playlist. | Must |
+| 8 | See download progress | As a user, I want to see the download progress of each video. | Should |

@@ -19,5 +19,11 @@ Requested data always requires the JWT authentication.
 | Create playlist | POST | `/playlist` | Create playlist form | 200 Playlist location |
 | Remove playlist | DELETE | `/playlist/{pl_id}` | | 200 |
 | Show videos from playlist | GET | `/playlist/{pl_id}/videos` |  | 200 [Video] |
-| Download videos from playlist | GET | `/playlist/{pl_id}/download` | Download playlist form | 200 zip file |
+| Start download session | GET | `/playlist/{pl_id}/download` | Download playlist form | 200 Download Session location |
+| Download the completed download session | GET | `/download/{ds_id}/complete` | | 200 zip file |
 
+### App Push API using SignalR
+Requested data always requires the JWT authentication.
+| Purpose | Method | Endpoint | Requested data | Expected response |
+|-|-|-|-|-|
+| Show download session progress | OnMessage | `/download/{ds_id}/status` | | 200 Download Session Complete object
