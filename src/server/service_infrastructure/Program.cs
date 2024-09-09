@@ -1,14 +1,24 @@
+using Microsoft.EntityFrameworkCore;
+using service_infrastructure.entities;
+using service_infrastructure.infrastructure.database;
+using System.Linq;
 namespace service_infrastructure;
 
 public class Program
 {
     public static void Main(string[] args)
     {
-        var builder = WebApplication.CreateBuilder(args);
-        var app = builder.Build();
+        Console.Out.WriteLine("ServiceInfrastructure Test");
+        
+        var context = new AppDbContext();
+        
+        var user1 = new UserAccount { id = Guid.NewGuid(), username = "jack", password_hash = Guid.NewGuid().ToString() };
+        
+        context.UserAccounts.Add(user1);
+        context.SaveChanges();
 
-        app.MapGet("/", () => "Hello World!");
+        var addedUser = context.UserAccounts.FirstOrDefault(user => user.username == "jack");
 
-        app.Run();
+        Console.Out.WriteLine("addedUser: {0}", addedUser.username.ToString());
     }
 }
