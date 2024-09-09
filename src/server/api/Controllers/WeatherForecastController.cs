@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using service_infrastructure;
 
 namespace server.Controllers;
 
@@ -28,5 +29,11 @@ public class WeatherForecastController : ControllerBase
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+    }
+
+    [HttpGet("DependencyTest")]
+    public String GetTest()
+    {
+        return DependencyTest.Test();
     }
 }
