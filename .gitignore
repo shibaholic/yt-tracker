@@ -1,2 +1,3 @@
 **/*.bkp
 src/server/**/*.sln.DotSettings.user
+hidden\ documentation/
