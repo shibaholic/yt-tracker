@@ -4,8 +4,6 @@ The database is MS SQL Server 2022.
 
 ## SQL queries
 
-- [`DROP_CREATE.sql`](../src/database/DROP_CREATE.sql) for conveniently dropping and re-creating all tables.
-
 - [`EXEC_NOTE.sql`](../src/database/EXEC_NOTE.sql) for writing test queries
 
 ## Local development
@@ -24,6 +22,12 @@ docker run \
     -d mcr.microsoft.com/mssql/server:2022-latest
 ```
 
+### Database and schema
+
+Database: sql_dev
+
+Schema: dbo
+
 ### Admin user
 
 Username: sa
@@ -34,6 +38,4 @@ Connect at: localhost:1433
 
 ## Database UML diagram
 
-placeholder UML diagram for now
-
-![database UML diagram](database%20UML%20diagram.drawio.png)
+UML diagram will not be drawn for the database, as it is the [`domain entities`](entities%20UML%20diagram.drawio.png) that the database changes to. 

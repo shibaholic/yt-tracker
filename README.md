@@ -16,8 +16,9 @@ The project consists of a frontend user interface, backend API and database.
 
 - Frontend documents
 - Backend documents
+  - [Software design](documentation/backend.md)
   - [API routes](documentation/API%20routes.md)
-- Database documents
+- [Database document](documentation/database.md)
 
 ## Development
 
